@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Motvani - Marriage Biodata</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Theme Variables */
+        :root {
+            --bg-primary: #F5F5F7;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --accent-color: #4A5568;
+            --border-color: #E5E7EB;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Theme Options */
+        [data-theme="purple"] {
+            --bg-primary: #FAF5FF;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6B7280;
+            --accent-color: #8B5CF6;
+            --accent-light: #C4B5FD;
+            --border-color: #E9D5FF;
+        }
+
+        [data-theme="blue"] {
+            --bg-primary: #EFF6FF;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6B7280;
+            --accent-color: #3B82F6;
+            --accent-light: #93C5FD;
+            --border-color: #DBEAFE;
+        }
+
+        [data-theme="rose"] {
+            --bg-primary: #FFF1F2;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6B7280;
+            --accent-color: #F43F5E;
+            --accent-light: #FDA4AF;
+            --border-color: #FFE4E6;
+        }
+
+        [data-theme="emerald"] {
+            --bg-primary: #ECFDF5;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6B7280;
+            --accent-color: #10B981;
+            --accent-light: #6EE7B7;
+            --border-color: #D1FAE5;
+        }
+
+        [data-theme="amber"] {
+            --bg-primary: #FFFBEB;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6B7280;
+            --accent-color: #F59E0B;
+            --accent-light: #FCD34D;
+            --border-color: #FEF3C7;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background 0.3s ease;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Theme Switcher in Nav */
+        .theme-switcher {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .theme-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .theme-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .theme-btn.active {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .theme-btn[data-theme="purple"] {
+            background: linear-gradient(135deg, #8B5CF6, #C4B5FD);
+        }
+
+        .theme-btn[data-theme="blue"] {
+            background: linear-gradient(135deg, #3B82F6, #93C5FD);
+        }
+
+        .theme-btn[data-theme="rose"] {
+            background: linear-gradient(135deg, #F43F5E, #FDA4AF);
+        }
+
+        .theme-btn[data-theme="emerald"] {
+            background: linear-gradient(135deg, #10B981, #6EE7B7);
+        }
+
+        .theme-btn[data-theme="amber"] {
+            background: linear-gradient(135deg, #F59E0B, #FCD34D);
+        }
+
+        /* Advanced Animations */
+        @keyframes gradient-shift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes rotate3d {
+            from {
+                transform: rotate(0deg) translateZ(0);
+            }
+
+            to {
+                transform: rotate(360deg) translateZ(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(2deg);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Card entrance animations */
+        @keyframes cardSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Glowing effect */
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(139, 92, 246, 0.6);
+            }
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--bg-secondary);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+            animation: slideDown 0.6s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-download-btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-download-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .nav-download-btn:hover::before {
+            left: 100%;
+        }
+
+        .nav-download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-download-btn i {
+            animation: bounce 2s infinite;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, var(--accent-color)10, transparent 70%);
+            opacity: 0.3;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-image-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 2rem;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--bg-secondary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            animation: float 6s ease-in-out infinite;
+            transition: all 0.5s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05) rotateY(10deg);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            padding: 1rem 2rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 4rem;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            animation: cardSlideIn 0.6s ease-out;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) rotateX(2deg);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 16px;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--accent-color), transparent);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover::before {
+            opacity: 0.3;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-color);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: var(--accent-color);
+            opacity: 0.1;
+            transform: translate(-50%, -50%);
+            transition: width 0.4s ease, height 0.4s ease;
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-card:hover::after {
+            width: 200px;
+            height: 200px;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .info-row:hover {
+            padding-left: 10px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03) rotateY(5deg) rotateX(5deg);
+            box-shadow: var(--shadow-hover);
+            z-index: 10;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1) translateZ(20px);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            padding: 2rem;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            transform: rotateY(360deg);
+        }
+
+        .contact-label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .contact-value {
+            color: var(--text-secondary);
+        }
+
+        /* Download Section */
+        .download-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            margin: 4rem 0;
+        }
+
+        .download-btn-large {
+            background: var(--accent-color);
+            color: white;
+            padding: 1.5rem 3rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-btn-large::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .download-btn-large:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .download-btn-large:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .download-note {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-right {
+                gap: 1rem;
+            }
+
+            .theme-switcher {
+                gap: 5px;
+            }
+
+            .theme-btn {
+                width: 25px;
+                height: 25px;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .nav-download-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .nav-download-btn span {
+                display: none;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body data-theme="purple">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Biodata</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#family">Family</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <!-- Theme Switcher -->
+                <div class="theme-switcher">
+                    <button class="theme-btn active" data-theme="purple" title="Purple Theme"></button>
+                    <button class="theme-btn" data-theme="blue" title="Blue Theme"></button>
+                    <button class="theme-btn" data-theme="rose" title="Rose Theme"></button>
+                    <button class="theme-btn" data-theme="emerald" title="Emerald Theme"></button>
+                    <button class="theme-btn" data-theme="amber" title="Amber Theme"></button>
+                </div>
+                <a href="#" class="nav-download-btn" id="navDownload">
+                    <i class="fas fa-download"></i>
+                    <span>Download</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="./om_profile.jpg" alt="Om Motvani" class="profile-image">
+            </div>
+            <h1>Om Motvani</h1>
+            <p>Software Engineer · Una, Gujarat</p>
+            <div class="hero-buttons">
+                <a href="/Om_Motvani_Biodata" download="Om_Motvani_Biodata.pdf" class="btn-primary">
+                    <i class="fas fa-download"></i>
+                    Download Biodata
+                </a>
+                <a href="#about" class="btn-secondary">
+                    Learn More <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="fade-in-section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Getting to know me better</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Born</div>
+                    <div class="stat-value">Oct 2001</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Lives In</div>
+                    <div class="stat-value">Una, Gujarat</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Height</div>
+                    <div class="stat-value">5'10"</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Status</div>
+                    <div class="stat-value">Never Married</div>
+                </div>
+            </div>
+
+            <!-- Bio -->
+            <div class="card">
+                <p style="text-align: center; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                    I am a dedicated software engineer with a passion for technology and innovation. I value family,
+                    culture, and personal growth. I'm looking for a life partner who shares similar values and
+                    aspirations for a bright future together.
+                </p>
+            </div>
+
+            <!-- Personal Details -->
+            <div class="card" style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Personal Details</h3>
+                <div class="info-row">
+                    <span class="info-label">Full Name</span>
+                    <span class="info-value">Om Khemchandbhai (Raja Bhai) Motvani</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Date of Birth</span>
+                    <span class="info-value">06th October, 2001</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Age</span>
+                    <span class="info-value">23 Years</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Height</span>
+                    <span class="info-value">5'10" (177.8 cm)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Weight</span>
+                    <span class="info-value">75 kg</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Blood Group</span>
+                    <span class="info-value">B+</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Caste</span>
+                    <span class="info-value">Sindhi</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Marital Status</span>
+                    <span class="info-value">Never Married</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Nationality</span>
+                    <span class="info-value">Indian</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Una, Girsomnath, Gujarat</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Section -->
+        <section id="family" class="fade-in-section">
+            <div class="section-header">
+                <h2>Family Details</h2>
+                <p>My family background</p>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Family Background</h3>
+                <div class="info-row">
+                    <span class="info-label">Father's Name</span>
+                    <span class="info-value">Khemchandbhai (Raja Bhai) Jivatram Motvani</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Father's Occupation</span>
+                    <span class="info-value">Government Employee (PGVCL)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Father's Contact</span>
+                    <span class="info-value">+91 9925216236</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Mother's Name</span>
+                    <span class="info-value">Hansaben Khemchandbhai (Raja Bhai) Motvani</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Mother's Occupation</span>
+                    <span class="info-value">Housewife</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Brother</span>
+                    <span class="info-value">Sujal Khemchandbhai (Rajabhai) Motvani</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Brother's Education</span>
+                    <span class="info-value">Pursuing MBA</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Maternal Grandfather</span>
+                    <span class="info-value">Late Mohanlal Chelaram Pritmani</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Family Business</span>
+                    <span class="info-value">Dolatram Chelaram Pritmani (Jetpur Fruit Business)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Career -->
+        <section id="education" class="fade-in-section">
+            <div class="section-header">
+                <h2>Education & Career</h2>
+                <p>Academic and professional background</p>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Education</h3>
+                <div class="info-row">
+                    <span class="info-label">Qualification</span>
+                    <span class="info-value">Computer Engineering</span>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Career</h3>
+                <div class="info-row">
+                    <span class="info-label">Occupation</span>
+                    <span class="info-value">Software Engineer</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Annual Income</span>
+                    <span class="info-value">₹4.2 Lakhs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="gallery" class="fade-in-section">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <p>A glimpse into my life</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./IMG_20260201_111905.jpg" alt="Photo 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./IMG_20260201_111732.jpg" alt="Photo 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=800&fit=crop"
+                        alt="Photo 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=800&fit=crop"
+                        alt="Photo 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="fade-in-section">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>Let's connect</p>
+            </div>
+
+            <div class="card">
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                    If you are interested, please feel free to reach out to my family. We would love to hear from you.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-label">My Contact</div>
+                        <div class="contact-value">+91 7228007237</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-label">Father's Contact</div>
+                        <div class="contact-value">+91 9925216236</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">ommotwani06@gmail.com</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-label">Location</div>
+                        <div class="contact-value">Harsiddhi Nagar, Una, Gujarat 362560</div>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-primary); border-radius: 12px;">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);">Complete Address:</h4>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Harsiddhi Nagar, Near Gayatri School,<br>
+                        Street No 2, Behind Shah HD High-school,<br>
+                        Una 362560, District Girsomnath,<br>
+                        Gujarat, India
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <div class="download-section fade-in-section">
+            <h2 style="margin-bottom: 1rem;">Download Complete Biodata</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Get the complete biodata in PDF format</p>
+            <a href="/Om_Motvani_Biodata.pdf" download="Om_Motvani_Biodata.pdf" class="download-btn-large">
+                <i class="fas fa-download"></i>
+                Download Biodata as PDF
+            </a>
+            <p class="download-note">Click to download your biodata instantly</p>
+        </div>
+    </div>
+
+    <script>
+        // Theme Switcher
+        const themeButtons = document.querySelectorAll('.theme-btn');
+        const body = document.body;
+
+        themeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const theme = btn.getAttribute('data-theme');
+                body.setAttribute('data-theme', theme);
+
+                themeButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Save theme preference
+                localStorage.setItem('biodata-theme', theme);
+            });
+        });
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('biodata-theme');
+        if (savedTheme) {
+            body.setAttribute('data-theme', savedTheme);
+            themeButtons.forEach(btn => {
+                if (btn.getAttribute('data-theme') === savedTheme) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Gallery Lightbox
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function () {
+                const img = this.querySelector('img');
+                const lightbox = document.createElement('div');
+                lightbox.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.95);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10000;
+                    cursor: pointer;
+                    animation: fadeIn 0.3s ease;
+                `;
+
+                const lightboxImg = document.createElement('img');
+                lightboxImg.src = img.src;
+                lightboxImg.style.cssText = `
+                    max-width: 90%;
+                    max-height: 90%;
+                    border-radius: 12px;
+                    box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+                    animation: zoomIn 0.3s ease;
+                `;
+
+                lightbox.appendChild(lightboxImg);
+                document.body.appendChild(lightbox);
+
+                lightbox.addEventListener('click', () => {
+                    lightbox.style.animation = 'fadeOut 0.3s ease';
+                    setTimeout(() => lightbox.remove(), 300);
+                });
+            });
+        });
+
+        // Add CSS for animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes zoomIn {
+                from {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+            /* Print Styles for PDF */
+            @media print {
+                /* Hide interactive elements */
+                .theme-switcher,
+                nav,
+                .download-section,
+                .btn-primary,
+                .btn-secondary,
+                .gallery-overlay,
+                .hero-buttons {
+                    display: none !important;
+                }
+                
+                /* Reset backgrounds and colors */
+                body {
+                    background: white !important;
+                    color: black !important;
+                }
+                
+                .hero {
+                    background: white !important;
+                    padding: 2rem 1rem !important;
+                    page-break-after: avoid;
+                }
+                
+                .hero::before {
+                    display: none !important;
+                }
+                
+                /* Optimize page breaks */
+                .card,
+                section {
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                    margin-bottom: 1.5rem !important;
+                }
+                
+                .section-header {
+                    page-break-after: avoid;
+                    break-after: avoid;
+                }
+                
+                /* Fix backgrounds */
+                .card,
+                .stat-card,
+                .contact-item,
+                .info-row {
+                    background: white !important;
+                    box-shadow: none !important;
+                    border: 1px solid #e5e7eb !important;
+                }
+                
+                /* Gallery layout for print */
+                .gallery-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    gap: 0.5rem !important;
+                    page-break-inside: avoid;
+                }
+                
+                .gallery-item {
+                    border: 1px solid #e5e7eb !important;
+                    page-break-inside: avoid;
+                }
+                
+                /* Reduce spacing for print */
+                .container {
+                    padding: 1rem !important;
+                }
+                
+                h1 {
+                    font-size: 2rem !important;
+                    color: black !important;
+                }
+                
+                h2 {
+                    font-size: 1.5rem !important;
+                    color: black !important;
+                    border-bottom: 2px solid #333;
+                    padding-bottom: 0.5rem;
+                }
+                
+                /* Ensure text is readable */
+                .info-label,
+                .stat-label {
+                    color: #666 !important;
+                }
+                
+                .info-value,
+                .stat-value {
+                    color: black !important;
+                }
+                
+                /* Contact section */
+                .contact-grid {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                }
+                
+                .contact-icon {
+                    background: #f3f4f6 !important;
+                    color: #333 !important;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
